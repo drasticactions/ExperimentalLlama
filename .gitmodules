@@ -1,0 +1,4 @@
+[submodule "external/LLamaSharp"]
+	path = external/LLamaSharp
+	url = git@github.com:drasticactions/LLamaSharp.git
+	branch = embeddings-semantickernel
