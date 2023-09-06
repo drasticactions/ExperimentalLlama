@@ -33,8 +33,8 @@ namespace SemanticKernelExamples.Examples
                 {
                     Seed = 1337,
                 };
-                using var model = LLamaWeights.LoadFromFile(parameters);
-                using var context = model.CreateContext(parameters);
+                var model = LLamaWeights.LoadFromFile(parameters);
+                var context = model.CreateContext(parameters);
                 var ex = new InteractiveExecutor(context);
 
                 chatGPT = new LLamaSharpChatCompletion(ex);
