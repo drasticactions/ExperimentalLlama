@@ -36,7 +36,7 @@ internal class Program
         Console.WriteLine("0: Example04_CombineLLMPromptsAndNativeCode");
         Console.WriteLine("1: Example14_SemanticMemory");
         Console.WriteLine("2: Example17_ChatGPT");
-
+        Console.WriteLine("3: Example32_StreamingCompletion");
         while (true)
         {
             Console.Write("\nYour choice: ");
@@ -53,6 +53,10 @@ internal class Program
             else if (choice == 2)
             {
                 await Example17_ChatGPT.Run(internet);
+            }
+            else if (choice == 3)
+            {
+                await Example32_StreamingCompletion.Run(internet);
             }
             else
             {
