@@ -106,7 +106,7 @@ namespace SemanticKernelExamples.Examples
         {
             Console.WriteLine("\nQuery: " + query + "\n");
 
-            var memories = kernel.Memory.SearchAsync(MemoryCollectionName, query, limit: 10, minRelevanceScore: 0.5);
+            var memories = kernel.Memory.SearchAsync(MemoryCollectionName, query, limit: 10, minRelevanceScore: 0.1);
 
             int i = 0;
             await foreach (MemoryQueryResult memory in memories)
