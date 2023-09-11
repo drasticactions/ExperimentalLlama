@@ -13,4 +13,14 @@ Ex:
 
 The 'chat' models will do better with `LLamaSharpChatCompletion`, while the latter should do better with `LLamaSharpTextCompletion`. Both should support TextEmbedding.
 
-To test the OpenAI versions, be sure to include `OPENAI_API_KEY` (OpenAI API key) and `BING` (Bing Search API token) in your environment variables. 
+To test the OpenAI versions, be sure to include `OPENAI_API_KEY` (OpenAI API key) and `BING` (Bing Search API token) in your environment variables.
+
+## Stable Diffusion
+
+To test the Stable Diffusion wrapper:
+
+- Download the newest artifacts for the stable-diffusion.cpp wrapper:
+[stable-diffusion.cpp-wrapper](https://github.com/drasticactions/stable-diffusion.cpp-wrapper/actions/workflows/main.yml)
+- Place the artifacts for the given OS you're running in the output directory of SemanticKernelExamples or LlamaPlayground
+
+You can download ggml stable diffusion models on [huggingface](https://huggingface.co/nmkd/stable-diffusion-1.5-ggml/tree/main). Note that these models are intended for images 512x or higher. They may perform poorly on lower resolution images. You can also follow these [docs](https://github.com/leejet/stable-diffusion.cpp#convert-weights) to convert SD weights into ggml models.

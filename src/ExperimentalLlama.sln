@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticKernelExamples", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LlamaPlayground", "LlamaPlayground\LlamaPlayground.csproj", "{9624EF80-039A-419C-8C37-6259BAA38F15}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StableDiffusionCppLib", "StableDiffusionCppLib\StableDiffusionCppLib.csproj", "{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,24 @@ Global
 		{9624EF80-039A-419C-8C37-6259BAA38F15}.Release|Arm64.Build.0 = Release|Any CPU
 		{9624EF80-039A-419C-8C37-6259BAA38F15}.Release|x64.ActiveCfg = Release|Any CPU
 		{9624EF80-039A-419C-8C37-6259BAA38F15}.Release|x64.Build.0 = Release|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Debug|Arm64.ActiveCfg = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Debug|Arm64.Build.0 = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Debug|x64.Build.0 = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.GPU|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.GPU|Any CPU.Build.0 = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.GPU|Arm64.ActiveCfg = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.GPU|Arm64.Build.0 = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.GPU|x64.ActiveCfg = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.GPU|x64.Build.0 = Debug|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|Arm64.ActiveCfg = Release|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|Arm64.Build.0 = Release|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|x64.ActiveCfg = Release|Any CPU
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +125,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A1721C24-71FC-4CF4-A5CB-8088BF468D88} = {B1A12178-DC2C-4D2E-8F61-1E76DD584F04}
 		{1C1A89E4-DDF7-4478-A71C-739998467F96} = {B1A12178-DC2C-4D2E-8F61-1E76DD584F04}
+		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15} = {B1A12178-DC2C-4D2E-8F61-1E76DD584F04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {67854C04-4BAA-433B-A6D2-16AFF307657F}

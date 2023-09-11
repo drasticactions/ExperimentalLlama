@@ -12,6 +12,7 @@
 	<ItemGroup>
 		<ProjectReference Include="..\..\external\LLamaSharp\LLama.SemanticKernel\LLamaSharp.SemanticKernel.csproj" />
 		<ProjectReference Include="..\..\external\LLamaSharp\LLama\LLamaSharp.csproj" />
+		<ProjectReference Include="..\StableDiffusionCppLib\StableDiffusionCppLib.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
