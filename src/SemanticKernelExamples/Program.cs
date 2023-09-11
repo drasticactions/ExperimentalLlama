@@ -39,8 +39,9 @@ internal class Program
         Console.WriteLine("3: Example17_ChatGPT");
         Console.WriteLine("4: Example18_DallE");
         Console.WriteLine("5: Example32_StreamingCompletion");
-        Console.WriteLine("6: Example49_LogitBias");
-        Console.WriteLine("7: StableDiffusion_Example");
+        Console.WriteLine("6: Example48_GroundednessChecks");
+        Console.WriteLine("7: Example49_LogitBias");
+        Console.WriteLine("8: StableDiffusion_Example");
         while (true)
         {
             Console.Write("\nYour choice: ");
@@ -72,9 +73,13 @@ internal class Program
             }
             else if (choice == 6)
             {
-                await Example49_LogitBias.Run(internet);
+                await Example48_GroundednessChecks.Run(internet);
             }
             else if (choice == 7)
+            {
+                await Example49_LogitBias.Run(internet);
+            }
+            else if (choice == 8)
             {
                 await StableDiffusion_Example.Run(internet);
             }

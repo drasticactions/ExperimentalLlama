@@ -1,15 +1,6 @@
-﻿using Azure.AI.OpenAI;
-using LLama;
-using LLama.Common;
-using LLamaSharp.SemanticKernel.ChatCompletion;
+﻿using LLamaSharp.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.AI.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.AI.OpenAI.ChatCompletion;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
