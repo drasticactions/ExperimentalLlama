@@ -1,4 +1,9 @@
-﻿using SemanticKernelExamples.Examples;
+﻿using LLamaSharp.SemanticKernel.ChatCompletion;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.SemanticKernel.AI.ChatCompletion;
+using SemanticKernelExamples;
+using SemanticKernelExamples.Examples;
 
 internal class Program
 {
@@ -46,6 +51,7 @@ internal class Program
         Console.WriteLine("10: StableDiffusion_Example");
         Console.WriteLine("11: Example07_BingAndGoogleSkills");
         Console.WriteLine("12: Example15_TextMemorySkill");
+        Console.WriteLine("13: ConsoleGPTService");
         while (true)
         {
             Console.Write("\nYour choice: ");
@@ -103,6 +109,10 @@ internal class Program
             {
                 await Example15_TextMemorySkill.Run(internet);
             }
+            else if (choice == 13)
+            {
+                await RunConsoleGPT(internet);
+            }
             else
             {
                 Console.WriteLine("Cannot parse your choice. Please select again.");
@@ -110,5 +120,65 @@ internal class Program
             }
             break;
         }
+    }
+
+    private static async Task RunConsoleGPT(bool internet)
+    {
+        var modelPath = "";
+        if (!internet)
+        {
+            Console.WriteLine("Local");
+            Console.Write("Please input your model path: ");
+            modelPath = Console.ReadLine();
+        }
+        // Create the host builder with logging configured from the kernel settings.
+        var builder = Host.CreateDefaultBuilder()
+            .ConfigureLogging(logging =>
+            {
+            });
+
+        // Configure the services for the host
+        builder.ConfigureServices((context, services) =>
+        {
+            IKernel kernel;
+
+            if (internet)
+            {
+                var builder = new KernelBuilder();
+                builder.WithOpenAIChatCompletionService("gpt-3.5-turbo", Environment.GetEnvironmentVariable("OPENAI_API_KEY") ?? throw new NotImplementedException("OPENAI_API_KEY"));
+                kernel = builder.Build();
+            }
+            else
+            {
+                // Load weights into memory
+                var parameters = new ModelParams(modelPath)
+                {
+                    Seed = 1337,
+                    ContextSize = 1024,
+                    GpuLayerCount = 50
+                };
+                var model = LLamaWeights.LoadFromFile(parameters);
+                var modelContext = model.CreateContext(parameters);
+                var ex = new InteractiveExecutor(modelContext);
+
+                var builder = new KernelBuilder();
+                builder.WithAIService<IChatCompletion>("local-llama-chat", new LLamaSharpChatCompletion(ex), true);
+                kernel = builder.Build();
+            }
+
+            // Add Semantic Kernel to the host builder
+            services.AddSingleton<IKernel>(kernel);
+
+            // Add Native Skills to the host builder
+            services.AddSingleton<ConsoleSkill>();
+            services.AddSingleton<ChatSkill>();
+
+            // Add the primary hosted service to the host builder to start the loop.
+            services.AddHostedService<ConsoleGPTService>();
+        });
+
+        // Build and run the host. This keeps the app running using the HostedService.
+        var host = builder.Build();
+        await host.RunAsync();
     }
 }
