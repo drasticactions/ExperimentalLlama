@@ -6,7 +6,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<!-- Set IncludeBuiltInRuntimes to false to include your own runtime libraries and not link the defaults -->
-		<IncludeBuiltInRuntimes>true</IncludeBuiltInRuntimes>
+		<IncludeBuiltInRuntimes>false</IncludeBuiltInRuntimes>
 	</PropertyGroup>
 
 	<ItemGroup>

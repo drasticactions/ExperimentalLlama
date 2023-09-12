@@ -44,6 +44,8 @@ internal class Program
         Console.WriteLine("8: Example49_LogitBias");
         Console.WriteLine("9: Example51_StepwisePlanner");
         Console.WriteLine("10: StableDiffusion_Example");
+        Console.WriteLine("11: Example07_BingAndGoogleSkills");
+        Console.WriteLine("12: Example15_TextMemorySkill");
         while (true)
         {
             Console.Write("\nYour choice: ");
@@ -92,6 +94,14 @@ internal class Program
             else if (choice == 10)
             {
                 await StableDiffusion_Example.Run(internet);
+            }
+            else if (choice == 11)
+            {
+                await Example07_BingAndGoogleSkills.Run(internet);
+            }
+            else if (choice == 12)
+            {
+                await Example15_TextMemorySkill.Run(internet);
             }
             else
             {
