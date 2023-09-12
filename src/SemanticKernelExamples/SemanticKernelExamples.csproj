@@ -16,9 +16,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.SemanticKernel" Version="0.21.230828.2-preview" />
+		<PackageReference Include="CoreCLR-NCalc" Version="2.2.113" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="0.24.230911.2-preview" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
-		<PackageReference Include="Microsoft.SemanticKernel.Skills.Web" Version="0.21.230828.2-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Planning.StepwisePlanner" Version="0.24.230911.2-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Skills.Web" Version="0.24.230911.2-preview" />
 	</ItemGroup>
 
 </Project>
