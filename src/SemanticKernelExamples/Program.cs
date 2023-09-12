@@ -52,6 +52,7 @@ internal class Program
         Console.WriteLine("11: Example07_BingAndGoogleSkills");
         Console.WriteLine("12: Example15_TextMemorySkill");
         Console.WriteLine("13: ConsoleGPTService");
+        Console.WriteLine("14: GitHub_Example");
         while (true)
         {
             Console.Write("\nYour choice: ");
@@ -112,6 +113,10 @@ internal class Program
             else if (choice == 13)
             {
                 await RunConsoleGPT(internet);
+            }
+            else if (choice == 14)
+            {
+                await GitHub_Example.Run(internet);
             }
             else
             {
