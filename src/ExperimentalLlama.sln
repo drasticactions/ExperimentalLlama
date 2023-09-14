@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LlamaPlayground", "LlamaPla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StableDiffusionCppLib", "StableDiffusionCppLib\StableDiffusionCppLib.csproj", "{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticKernelExamples.Core", "SemanticKernelExamples.Core\SemanticKernelExamples.Core.csproj", "{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,6 +120,24 @@ Global
 		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|Arm64.Build.0 = Release|Any CPU
 		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|x64.ActiveCfg = Release|Any CPU
 		{ECDA1C0A-B9F3-4C7D-8001-10C575158D15}.Release|x64.Build.0 = Release|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Debug|Arm64.ActiveCfg = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Debug|Arm64.Build.0 = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Debug|x64.Build.0 = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.GPU|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.GPU|Any CPU.Build.0 = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.GPU|Arm64.ActiveCfg = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.GPU|Arm64.Build.0 = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.GPU|x64.ActiveCfg = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.GPU|x64.Build.0 = Debug|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Release|Arm64.ActiveCfg = Release|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Release|Arm64.Build.0 = Release|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Release|x64.ActiveCfg = Release|Any CPU
+		{3A3C0003-68C0-4A61-99DB-938BDC3C7ABF}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

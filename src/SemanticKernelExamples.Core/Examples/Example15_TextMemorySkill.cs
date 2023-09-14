@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example15_TextMemorySkill
+    public class Example15_TextMemorySkill
     {
         private const string MemoryCollectionName = "aboutMe";
 

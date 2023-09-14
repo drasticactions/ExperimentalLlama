@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples;
 
-internal class Example18_DallE
+public class Example18_DallE
 {
     public static async Task Run(bool internet = false)
     {

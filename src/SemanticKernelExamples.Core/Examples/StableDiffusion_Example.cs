@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class StableDiffusion_Example
+    public class StableDiffusion_Example
     {
         public static async Task Run(bool internet = false)
         {

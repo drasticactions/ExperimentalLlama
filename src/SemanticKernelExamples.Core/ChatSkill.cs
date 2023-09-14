@@ -11,7 +11,7 @@ namespace SemanticKernelExamples
     /// <summary>
     /// A Sematic Kernel skill that interacts with ChatGPT
     /// </summary>
-    internal class ChatSkill
+    public class ChatSkill
     {
         private readonly IChatCompletion _chatCompletion;
         private readonly ChatHistory _chatHistory;

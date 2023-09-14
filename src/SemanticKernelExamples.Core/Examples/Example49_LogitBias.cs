@@ -4,7 +4,7 @@ using Microsoft.SemanticKernel.Connectors.AI.OpenAI.ChatCompletion;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example49_LogitBias
+    public class Example49_LogitBias
     {
         public static async Task Run(bool internet = false)
         {

@@ -14,7 +14,7 @@ using LLamaSharp.SemanticKernel.ChatCompletion;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example51_StepwisePlanner
+    public class Example51_StepwisePlanner
     {
         // Used to override the max allowed tokens when running the plan
         internal static int? ChatMaxTokens = null;

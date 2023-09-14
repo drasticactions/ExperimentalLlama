@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class GitHub_Example
+    public class GitHub_Example
     {
         public static async Task Run(bool internet = false)
         {

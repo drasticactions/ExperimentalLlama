@@ -5,7 +5,7 @@ using Microsoft.SemanticKernel.Memory;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example48_GroundednessChecks
+    public class Example48_GroundednessChecks
     {
         public static async Task Run(bool internet = false)
         {

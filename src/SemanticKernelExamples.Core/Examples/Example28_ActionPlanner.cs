@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example28_ActionPlanner
+    public class Example28_ActionPlanner
     {
         public static async Task Run(bool internet = false)
         {

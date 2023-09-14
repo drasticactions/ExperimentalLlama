@@ -6,7 +6,7 @@ using Microsoft.SemanticKernel.Skills.Core;
 
 namespace SemanticKernelExamples.Examples;
 
-internal class Example13_ConversationSummarySkill
+public class Example13_ConversationSummarySkill
 {
     public static async Task Run(bool internet = false)
     {

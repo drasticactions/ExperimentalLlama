@@ -13,7 +13,7 @@ namespace SemanticKernelExamples
     /// This takes console input, then sends it to the configured AI service, and then prints the response.
     /// All conversation history is maintained in the chat history.
     /// </summary>
-    internal class ConsoleGPTService : IHostedService
+    public class ConsoleGPTService : IHostedService
     {
         private readonly IKernel _semanticKernel;
         private readonly IDictionary<string, ISKFunction> _consoleSkill;

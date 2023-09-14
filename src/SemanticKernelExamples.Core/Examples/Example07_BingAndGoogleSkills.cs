@@ -11,7 +11,7 @@ using Microsoft.SemanticKernel.TemplateEngine.Prompt;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example07_BingAndGoogleSkills
+    public class Example07_BingAndGoogleSkills
     {
         public static async Task Run(bool internet = false)
         {

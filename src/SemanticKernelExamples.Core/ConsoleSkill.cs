@@ -12,7 +12,7 @@ namespace SemanticKernelExamples
     /// <summary>
     /// A Sematic Kernel skill that provides the ability to read and write from the console
     /// </summary>
-    internal class ConsoleSkill
+    public class ConsoleSkill
     {
         private bool _isGoodbye = false;
 

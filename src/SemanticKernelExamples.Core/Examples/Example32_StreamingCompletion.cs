@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example32_StreamingCompletion
+    public class Example32_StreamingCompletion
     {
         public static async Task Run(bool internet = false)
         {

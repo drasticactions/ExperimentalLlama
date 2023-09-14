@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example04_CombineLLMPromptsAndNativeCode
+    public class Example04_CombineLLMPromptsAndNativeCode
     {
         public static async Task Run(bool internet = false)
         {

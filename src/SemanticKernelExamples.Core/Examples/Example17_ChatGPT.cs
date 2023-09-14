@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace SemanticKernelExamples.Examples
 {
-    internal class Example17_ChatGPT
+    public class Example17_ChatGPT
     {
         public static async Task Run(bool internet = false)
         {
